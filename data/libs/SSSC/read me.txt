@@ -1,0 +1,23 @@
+Reproduce experimental results reported in 
+Scalable Sparse Subspace Clustering 
+Xi Peng, Lei Zhang, Zhang Yi,
+The 26th IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Portland, Oregon, USA, June, 2013.
+
+% =============================== code =======================================
+Please specify the following parameters in the "L1ParameterConfig.m"
+
+par.nDim               =    114; % the eigenfaces dimension
+par.landmarkNO         =    1000; % the number of landmark or representative data
+% --- optimization algorithms configuration
+par.lambda             =    [1e-7 1e-6 1e-5]; % balance factor
+par.tolerance          =    [1e-3 0.01 0.1]; % error tol
+
+1. main.m is the main of SSSC algorithm;
+2. InSample.m performs SSC over the chosen data;
+3. OutSample.m perform classifying over the non-chosen data;
+4. AnalyzeResult_SSSC.m find the best result with an optimal parameter. for example, SSSC will perform 9 times if we have the above parameter configurations.
+
+
+% =============================== data =============================== 
+To fix data partition, we need 2 files for each data set, one is 'dataName.mat', another is 'dataName_landmarkID'. The former one contains the original data; and the latter one contain the index of in-sample data.
+Due to the space limitation, we upload two data files and all index file. the other data could be accessed as suggested in our manuscript.

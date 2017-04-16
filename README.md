@@ -6,6 +6,8 @@ MATLAB implementation of the kSSC algorithm by Stephen Tierney.
 
 ## Citing
 
+https://arxiv.org/abs/1704.03958
+
 The paper has been submitted to Neurocomputing, December 2016.
 
 Efficient Sparse Subspace Clustering by Nearest Neighbour Filtering
